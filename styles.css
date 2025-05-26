@@ -31,8 +31,24 @@ button:hover {
   box-shadow: 0 0 25px #b94eff;
 }
 
-audio {
+.audio-wrapper {
+  background-color: #1a001f;
+  border: 2px solid #8a2be2;
+  border-radius: 15px;
+  padding: 20px;
+  display: inline-block;
+  box-shadow: 0 0 20px #8a2be2;
   margin-top: 30px;
-  width: 80%;
-  max-width: 600px;
+}
+
+audio::-webkit-media-controls-panel {
+  background-color: #2e003e;
+  border-radius: 10px;
+  color: white;
+}
+
+audio {
+  width: 100%;
+  outline: none;
+  border-radius: 10px;
 }
