@@ -1,1 +1,38 @@
+body {
+  background: radial-gradient(circle, #2e003e, #000000);
+  color: #8a2be2;
+  font-family: 'Arial', sans-serif;
+  text-align: center;
+  padding-top: 50px;
+}
 
+h1 {
+  font-size: 2rem;
+  color: #8a2be2;
+  text-shadow: 0 0 10px #8a2be2;
+}
+
+.song-buttons button,
+.phonk-btn-container button {
+  background-color: transparent;
+  color: white;
+  border: 2px solid #b94eff;
+  border-radius: 20px;
+  padding: 15px 20px;
+  margin: 10px;
+  font-size: 1rem;
+  cursor: pointer;
+  box-shadow: 0 0 15px #b94eff;
+  transition: transform 0.2s;
+}
+
+button:hover {
+  transform: scale(1.05);
+  box-shadow: 0 0 25px #b94eff;
+}
+
+audio {
+  margin-top: 30px;
+  width: 80%;
+  max-width: 600px;
+}
