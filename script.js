@@ -1,5 +1,9 @@
 function playSong(path) {
-  const player = document.getElementById('audioPlayer');
-  player.src = path;
-  player.play();
+    const audioPlayer = document.getElementById("audioPlayer");
+    audioPlayer.src = path;
+    if (audioPlayer.paused || audioPlayer.ended) {
+        audioPlayer.play(); 
+    } else {
+        audioPlayer.pause();
+    }
 }
