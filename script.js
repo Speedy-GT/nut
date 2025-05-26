@@ -7,3 +7,8 @@ function playSong(path) {
         audioPlayer.pause();
     }
 }
+
+function setPlaybackRate(rate) {
+  const audioPlayer = document.getElementById('audioPlayer');
+  audioPlayer.playbackRate = rate;
+}
