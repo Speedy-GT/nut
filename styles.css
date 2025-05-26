@@ -13,7 +13,8 @@ h1 {
 }
 
 .song-buttons button,
-.phonk-btn-container button {
+.phonk-btn-container button,
+.speed-controls button {
   background-color: transparent;
   color: white;
   border: 2px solid #b94eff;
@@ -39,7 +40,8 @@ button:hover {
   display: inline-block;
   box-shadow: 0 0 20px #8a2be2;
   margin-top: 30px;
-  width: 300px;
+  width: 90%;
+  max-width: 500px;
 }
 
 audio::-webkit-media-controls-panel {
@@ -52,4 +54,8 @@ audio {
   width: 100%;
   outline: none;
   border-radius: 10px;
+}
+
+.speed-controls {
+  margin-top: 20px;
 }
