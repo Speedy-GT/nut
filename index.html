@@ -2,11 +2,25 @@
 <html lang="en">
 <head>
   <meta charset="UTF-8">
-  <title>My GitHub Page</title>
+  <title>My Homemade Spotify</title>
+  <link rel="stylesheet" href="styles.css">
 </head>
-<body style="text-align:center;">
-  <h1>Welcome to My Site</h1>
-  <img src="https://raw.githubusercontent.com/devicons/devicon/master/icons/python/python-original.svg" width="60"/>
-  <img src="https://raw.githubusercontent.com/devicons/devicon/master/icons/csharp/csharp-original.svg" width="60"/>
+<body>
+  <h1>Spedify</h1>
+
+  <div class="song-buttons">
+    <button onclick="playSong('songs/nope.mp3')">Nope your too late i already died</button>
+    <button onclick="playSong('songs/twenty_first.mp3')">My Twenty First Reason</button>
+    <button onclick="playSong('songs/stop_looking.mp3')">i should stop looking out for you</button>
+    <button onclick="playSong('songs/dark_thoughts.mp3')">Dark Thoughts</button>
+  </div>
+
+  <audio id="audioPlayer" controls></audio>
+
+  <div class="phonk-btn-container">
+    <button onclick="goToPhonk()">Phonk page</button>
+  </div>
+
+  <script src="script.js"></script>
 </body>
 </html>
